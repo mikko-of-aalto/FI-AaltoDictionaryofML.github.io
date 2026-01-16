@@ -146,11 +146,11 @@
 	&\featurevec \sim \probdist^{(\vz)}  &\quad & \parbox{.85\textwidth}{The \gls{rv} $\featurevec$ is distributed according to 
 		the \gls{probdist} $\probdist^{(\vz)}$ \cite{klenke2020probability}, \cite{BillingsleyProbMeasure}.
 		\\ See also: \gls{rv}, \gls{probdist}.}  \nonumber \\[2mm] \hline \nonumber\\[-5mm]  
-	&\expect_{p} \{ f(\datapoint) \}  &\quad & \parbox{.85\textwidth}{The \gls{expectation} of an \gls{rv} $f(\datapoint)$ that 
+	&\expect_{p} \{ f(\datapoint) \}  &\quad & \parbox{.85\textwidth}{The \gls{expectation} of an \gls{rv} $f(\datapoint)$, that 
 		is obtained by applying a deterministic \gls{function} $f$ to an \gls{rv}
-		$\datapoint$ whose \gls{probdist} is $\probdist^{(\datapoint)}$. 
+		$\datapoint$ whose \gls{probdist} has a \gls{pdf} $p^{(\datapoint)}$. 
 		If the \gls{probdist} is clear from context, we just write $\expect \{ f(\datapoint) \}$. 
-		\\ See also: \gls{expectation}, \gls{rv}, \gls{function}, \gls{probdist}.}  \nonumber \\[2mm] \hline \nonumber\\[-5mm]
+		\\ See also: \gls{expectation}, \gls{rv}, \gls{function}, \gls{probdist}, \gls{pdf}.}  \nonumber \\[2mm] \hline \nonumber\\[-5mm]
 	&\cov{x}{y} &\quad & \parbox{.85\textwidth}{The \gls{covariance} between two real-valued \glspl{rv} defined 
 		over a common \gls{probspace}. 
 		\\ See also: \gls{covariance}, \gls{rv}, \gls{probdist}.}  \nonumber \\[2mm] \hline \nonumber\\[-5mm]
@@ -199,9 +199,9 @@
 		\\ See also: \gls{entropy}, \gls{discreteRV}.}  \nonumber \\[2mm] \hline \nonumber\\[-5mm]
 	&\samplespace &\quad & \parbox{.85\textwidth}{A \gls{samplespace} of all possible \glspl{outcome} of a \gls{randomexperiment}. 
 		\\ See also: \gls{event}.}  \nonumber \\[2mm] \hline \nonumber\\[-5mm]
-	&\sigmaalgebra &\quad & \parbox{.85\textwidth}{A collection of \gls{measurable} subsets of a \gls{samplespace} $\samplespace$. 
+	&\sigmaalgebra &\quad & \parbox{.85\textwidth}{A collection of \gls{measurable} subsets of a \gls{samplespace} $\samplespace$. % Is this all possible subsets? 
 		\\ See also: \gls{samplespace}, \gls{event}.}  \nonumber \\[2mm] \hline \nonumber\\[-5mm]
-	&\mathcal{P} &\quad & \parbox{.85\textwidth}{A \gls{probspace} that consists of a \gls{samplespace} $\samplespace$, a 
+	&\mathcal{P} &\quad & \parbox{.85\textwidth}{A \gls{probspace} that consists of a \gls{samplespace} $\samplespace$, a  % Should we define it as P := (Sigma, F, P(.))?
 		\gls{sigmaalgebra} $\sigmaalgebra$ of \gls{measurable} subsets of $\samplespace$, and a \gls{probdist} $\prob{ \cdot}$.
 		\\ See also: \gls{samplespace}, \gls{measurable}, \gls{probdist}.} \nonumber                                       
 \end{align}
